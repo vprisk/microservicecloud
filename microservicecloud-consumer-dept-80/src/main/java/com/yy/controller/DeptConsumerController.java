@@ -10,11 +10,12 @@ import java.util.List;
 
 @RestController
 public class DeptConsumerController {
-    private static final String URL_PREFEX="http://localhost:8001/dept/";
+//    private static final String URL_PREFEX="http://localhost:8001/dept/";
+      private static final String URL_PREFEX = "http://MICROSERVICECLOUD-DEPT";
     @Autowired
     private RestTemplate restTemplate;
     @RequestMapping("/consumer/dept/list")
     public List<Dept> list(){
-        return restTemplate.getForObject(URL_PREFEX+"list",List.class);
+        return restTemplate.getForObject(URL_PREFEX+"/dept/list",List.class);
     }
 }
