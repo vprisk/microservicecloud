@@ -9,5 +9,5 @@ import java.util.List;
 @FeignClient(value = "MICROSERVICECLOUD-DEPT")
 public interface DeptClientService {
     @RequestMapping(value = "/dept/list")
-    public List<Dept> list();
+    List<Dept> list();
 }

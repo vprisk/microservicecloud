@@ -9,5 +9,5 @@ public interface DeptService {
      * 获取所有的部门
      * @return
      */
-    public List<Dept> list();
+    List<Dept> list();
 }
